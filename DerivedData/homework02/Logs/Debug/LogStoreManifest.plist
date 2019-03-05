@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>00D98E26-892E-48C4-A8B5-81F352CB49EF</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>00D98E26-892E-48C4-A8B5-81F352CB49EF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572394350.21165895</real>
+			<key>timeStoppedRecording</key>
+			<real>572394470.85597003</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>00D98E26-892E-48C4-A8B5-81F352CB49EF</string>
+		</dict>
+		<key>01BD7683-06F9-4EE7-8F5B-65053A76E1CD</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>01BD7683-06F9-4EE7-8F5B-65053A76E1CD.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572458306.26099205</real>
+			<key>timeStoppedRecording</key>
+			<real>572458432.98535299</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>01BD7683-06F9-4EE7-8F5B-65053A76E1CD</string>
+		</dict>
+		<key>01C03586-276D-4BA3-A06C-39F434461E7F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>01C03586-276D-4BA3-A06C-39F434461E7F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572458642.67043102</real>
+			<key>timeStoppedRecording</key>
+			<real>572459349.18182695</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>01C03586-276D-4BA3-A06C-39F434461E7F</string>
+		</dict>
+		<key>1699B6A2-4C09-4465-B256-B18BDC2F33D5</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>1699B6A2-4C09-4465-B256-B18BDC2F33D5.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572459572.50076401</real>
+			<key>timeStoppedRecording</key>
+			<real>572459647.382182</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>1699B6A2-4C09-4465-B256-B18BDC2F33D5</string>
+		</dict>
+		<key>1AB19E7E-ADCE-4817-99A7-209EF0CBF5DC</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>1AB19E7E-ADCE-4817-99A7-209EF0CBF5DC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572459672.84279704</real>
+			<key>timeStoppedRecording</key>
+			<real>572459790.61975896</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>1AB19E7E-ADCE-4817-99A7-209EF0CBF5DC</string>
+		</dict>
+		<key>1EE4CD1B-64BD-49EE-AE05-E1C260DEEFD6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>1EE4CD1B-64BD-49EE-AE05-E1C260DEEFD6.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572459389.91578603</real>
+			<key>timeStoppedRecording</key>
+			<real>572459436.07909501</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>1EE4CD1B-64BD-49EE-AE05-E1C260DEEFD6</string>
+		</dict>
+		<key>280F53E7-3E00-4FBB-BAD1-6E32BA5EFBC1</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>280F53E7-3E00-4FBB-BAD1-6E32BA5EFBC1.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572456004.97676694</real>
+			<key>timeStoppedRecording</key>
+			<real>572456497.15797305</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>280F53E7-3E00-4FBB-BAD1-6E32BA5EFBC1</string>
+		</dict>
+		<key>282DA760-82B5-4B21-839F-DC17A09FCC59</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>282DA760-82B5-4B21-839F-DC17A09FCC59.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572458568.61843395</real>
+			<key>timeStoppedRecording</key>
+			<real>572458607.41455495</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>282DA760-82B5-4B21-839F-DC17A09FCC59</string>
+		</dict>
+		<key>293F3FD7-39E5-49A7-BDDD-FD87E8D6C634</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>293F3FD7-39E5-49A7-BDDD-FD87E8D6C634.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572460744.464311</real>
+			<key>timeStoppedRecording</key>
+			<real>572460974.12307799</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>293F3FD7-39E5-49A7-BDDD-FD87E8D6C634</string>
+		</dict>
+		<key>2A3512EE-3B27-4C75-9769-A47ECCE13BB2</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2A3512EE-3B27-4C75-9769-A47ECCE13BB2.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572395939.79842901</real>
+			<key>timeStoppedRecording</key>
+			<real>572455671.86378896</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>2A3512EE-3B27-4C75-9769-A47ECCE13BB2</string>
+		</dict>
+		<key>2B5917E5-C2DB-4B43-A8D1-CEC86FB6B8AE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2B5917E5-C2DB-4B43-A8D1-CEC86FB6B8AE.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572394759.01884103</real>
+			<key>timeStoppedRecording</key>
+			<real>572394876.05315197</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>2B5917E5-C2DB-4B43-A8D1-CEC86FB6B8AE</string>
+		</dict>
+		<key>3096D021-582B-4570-9ABA-4C5EA111EAF1</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3096D021-582B-4570-9ABA-4C5EA111EAF1.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572395581.45269001</real>
+			<key>timeStoppedRecording</key>
+			<real>572395678.81314397</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>3096D021-582B-4570-9ABA-4C5EA111EAF1</string>
+		</dict>
+		<key>367988C7-12CE-445E-9CCC-0A50BC66A092</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>367988C7-12CE-445E-9CCC-0A50BC66A092.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572458438.00310194</real>
+			<key>timeStoppedRecording</key>
+			<real>572458562.61019802</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>367988C7-12CE-445E-9CCC-0A50BC66A092</string>
+		</dict>
+		<key>394C3798-3040-4957-BDD8-5ED0D5D72932</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>394C3798-3040-4957-BDD8-5ED0D5D72932.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572460991.35348201</real>
+			<key>timeStoppedRecording</key>
+			<real>572461071.77228296</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>394C3798-3040-4957-BDD8-5ED0D5D72932</string>
+		</dict>
+		<key>3D88D7B3-EE72-45BB-B25B-6D5AA4573E1B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3D88D7B3-EE72-45BB-B25B-6D5AA4573E1B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572457252.72447801</real>
+			<key>timeStoppedRecording</key>
+			<real>572457322.25255299</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>3D88D7B3-EE72-45BB-B25B-6D5AA4573E1B</string>
+		</dict>
+		<key>3F41E43C-9766-47E5-A777-E4B714833B39</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3F41E43C-9766-47E5-A777-E4B714833B39.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572459795.52649498</real>
+			<key>timeStoppedRecording</key>
+			<real>572459852.92073798</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>3F41E43C-9766-47E5-A777-E4B714833B39</string>
+		</dict>
+		<key>412CEFDB-BC57-4F67-94C6-3C2350698C61</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>412CEFDB-BC57-4F67-94C6-3C2350698C61.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572455686.64674699</real>
+			<key>timeStoppedRecording</key>
+			<real>572455753.79988897</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>412CEFDB-BC57-4F67-94C6-3C2350698C61</string>
+		</dict>
+		<key>518818C3-7AA4-460B-B433-6D30077F742B</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>518818C3-7AA4-460B-B433-6D30077F742B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572376022.07838702</real>
+			<key>timeStoppedRecording</key>
+			<real>572376839.07070398</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>518818C3-7AA4-460B-B433-6D30077F742B</string>
+		</dict>
+		<key>534B71AE-4560-4ABE-A63F-C6C5582B1B40</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>534B71AE-4560-4ABE-A63F-C6C5582B1B40.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572394879.67212296</real>
+			<key>timeStoppedRecording</key>
+			<real>572395077.57305396</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>534B71AE-4560-4ABE-A63F-C6C5582B1B40</string>
+		</dict>
+		<key>5CC6AD96-7ADF-4898-80DC-6A3CD12411CD</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5CC6AD96-7ADF-4898-80DC-6A3CD12411CD.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572455755.532897</real>
+			<key>timeStoppedRecording</key>
+			<real>572455917.76627898</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>5CC6AD96-7ADF-4898-80DC-6A3CD12411CD</string>
+		</dict>
+		<key>66F059FE-5BC5-4BC0-A23C-1777F5645F51</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>66F059FE-5BC5-4BC0-A23C-1777F5645F51.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572459857.07950497</real>
+			<key>timeStoppedRecording</key>
+			<real>572460071.74430203</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>66F059FE-5BC5-4BC0-A23C-1777F5645F51</string>
+		</dict>
+		<key>79FCECD8-5868-426C-B8BA-6A5E52D40C47</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>79FCECD8-5868-426C-B8BA-6A5E52D40C47.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572457789.18838203</real>
+			<key>timeStoppedRecording</key>
+			<real>572457991.69127905</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>79FCECD8-5868-426C-B8BA-6A5E52D40C47</string>
+		</dict>
+		<key>7A44D368-391B-4083-AEA8-FFFC284B402E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7A44D368-391B-4083-AEA8-FFFC284B402E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572394673.43159497</real>
+			<key>timeStoppedRecording</key>
+			<real>572394722.84715903</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>7A44D368-391B-4083-AEA8-FFFC284B402E</string>
+		</dict>
+		<key>7A640304-65FF-4E27-B6C6-C08C93E6FB07</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7A640304-65FF-4E27-B6C6-C08C93E6FB07.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572460575.69386804</real>
+			<key>timeStoppedRecording</key>
+			<real>572460730.62672698</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>7A640304-65FF-4E27-B6C6-C08C93E6FB07</string>
+		</dict>
+		<key>7FD82064-4C6A-4CEF-9AB2-72F0B5487346</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7FD82064-4C6A-4CEF-9AB2-72F0B5487346.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572457994.79014897</real>
+			<key>timeStoppedRecording</key>
+			<real>572458063.664469</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>7FD82064-4C6A-4CEF-9AB2-72F0B5487346</string>
+		</dict>
+		<key>80CB3B88-706C-4270-A66E-895BCA7AF93F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>80CB3B88-706C-4270-A66E-895BCA7AF93F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572460977.43865597</real>
+			<key>timeStoppedRecording</key>
+			<real>572460980.39670897</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>80CB3B88-706C-4270-A66E-895BCA7AF93F</string>
+		</dict>
+		<key>85903754-8A36-40DE-8AC7-5DD33891E8FF</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>85903754-8A36-40DE-8AC7-5DD33891E8FF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572458262.59158504</real>
+			<key>timeStoppedRecording</key>
+			<real>572458303.60365796</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>85903754-8A36-40DE-8AC7-5DD33891E8FF</string>
+		</dict>
+		<key>872C6605-7D4B-43A0-9E44-2A1DFA2C60CD</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>872C6605-7D4B-43A0-9E44-2A1DFA2C60CD.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572461548.32543695</real>
+			<key>timeStoppedRecording</key>
+			<real>572462904.32865906</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>872C6605-7D4B-43A0-9E44-2A1DFA2C60CD</string>
+		</dict>
+		<key>A2D8CBEF-E3A9-468F-88EA-0B4EA097BF69</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A2D8CBEF-E3A9-468F-88EA-0B4EA097BF69.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572284755.41729701</real>
+			<key>timeStoppedRecording</key>
+			<real>572284838.99840701</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>A2D8CBEF-E3A9-468F-88EA-0B4EA097BF69</string>
+		</dict>
+		<key>AA7A8ABC-8A4A-424A-9B71-3912EFCD8278</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>AA7A8ABC-8A4A-424A-9B71-3912EFCD8278.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572289064.70880997</real>
+			<key>timeStoppedRecording</key>
+			<real>572289310.36578703</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>AA7A8ABC-8A4A-424A-9B71-3912EFCD8278</string>
+		</dict>
+		<key>AF651076-8EE5-4995-8BBF-A312AE1010E0</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>AF651076-8EE5-4995-8BBF-A312AE1010E0.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572457539.50116706</real>
+			<key>timeStoppedRecording</key>
+			<real>572457729.17963505</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>AF651076-8EE5-4995-8BBF-A312AE1010E0</string>
+		</dict>
+		<key>B426C530-D892-401F-8AA2-6E5923E505E4</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B426C530-D892-401F-8AA2-6E5923E505E4.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572376847.18830299</real>
+			<key>timeStoppedRecording</key>
+			<real>572393639.36452699</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>B426C530-D892-401F-8AA2-6E5923E505E4</string>
+		</dict>
+		<key>B9655103-3EDB-4849-A14F-5248018D0626</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B9655103-3EDB-4849-A14F-5248018D0626.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572460071.83471704</real>
+			<key>timeStoppedRecording</key>
+			<real>572460458.35646999</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>B9655103-3EDB-4849-A14F-5248018D0626</string>
+		</dict>
+		<key>BD4D5ADB-B78D-4189-B9E7-728373D4B5FE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>BD4D5ADB-B78D-4189-B9E7-728373D4B5FE.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572394476.94408596</real>
+			<key>timeStoppedRecording</key>
+			<real>572394670.74832404</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>BD4D5ADB-B78D-4189-B9E7-728373D4B5FE</string>
+		</dict>
+		<key>C450FAE7-D934-4EDC-9C61-9BB3428B3490</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C450FAE7-D934-4EDC-9C61-9BB3428B3490.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572457347.91020501</real>
+			<key>timeStoppedRecording</key>
+			<real>572457527.21337605</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>C450FAE7-D934-4EDC-9C61-9BB3428B3490</string>
+		</dict>
+		<key>CC4B04E0-0840-4B95-AD5F-44F5338B204F</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>CC4B04E0-0840-4B95-AD5F-44F5338B204F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572458114.05097795</real>
+			<key>timeStoppedRecording</key>
+			<real>572458209.13517499</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>CC4B04E0-0840-4B95-AD5F-44F5338B204F</string>
+		</dict>
+		<key>D100F5E4-0D0B-4A79-AA2B-77A1EBC6B270</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D100F5E4-0D0B-4A79-AA2B-77A1EBC6B270.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572458211.20533299</real>
+			<key>timeStoppedRecording</key>
+			<real>572458260.83461905</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>D100F5E4-0D0B-4A79-AA2B-77A1EBC6B270</string>
+		</dict>
+		<key>D16C375E-EBC5-4882-ABBF-FAC90888F54D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D16C375E-EBC5-4882-ABBF-FAC90888F54D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572393791.03800201</real>
+			<key>timeStoppedRecording</key>
+			<real>572394234.38312197</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>D16C375E-EBC5-4882-ABBF-FAC90888F54D</string>
+		</dict>
+		<key>D9BE74E1-88A0-4654-8BAB-86EAE01B017D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D9BE74E1-88A0-4654-8BAB-86EAE01B017D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572458610.04934704</real>
+			<key>timeStoppedRecording</key>
+			<real>572458640.06226695</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>D9BE74E1-88A0-4654-8BAB-86EAE01B017D</string>
+		</dict>
+		<key>E616C51A-C906-4270-8F19-C003AA66CF51</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E616C51A-C906-4270-8F19-C003AA66CF51.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572395119.58987999</real>
+			<key>timeStoppedRecording</key>
+			<real>572395570.01951802</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>E616C51A-C906-4270-8F19-C003AA66CF51</string>
+		</dict>
+		<key>E957A2D5-3741-4D19-85CB-E94667B1F42A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E957A2D5-3741-4D19-85CB-E94667B1F42A.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572289035.24189198</real>
+			<key>timeStoppedRecording</key>
+			<real>572289061.31320202</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>E957A2D5-3741-4D19-85CB-E94667B1F42A</string>
+		</dict>
+		<key>EA63B2AE-2567-4825-A2AB-96571C97F5BB</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EA63B2AE-2567-4825-A2AB-96571C97F5BB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572287434.20924103</real>
+			<key>timeStoppedRecording</key>
+			<real>572287585.73284495</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>EA63B2AE-2567-4825-A2AB-96571C97F5BB</string>
+		</dict>
+		<key>EBB46C1D-FEFD-4102-A836-7E6BCD6A3968</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EBB46C1D-FEFD-4102-A836-7E6BCD6A3968.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572289471.61659002</real>
+			<key>timeStoppedRecording</key>
+			<real>572376008.13162398</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>EBB46C1D-FEFD-4102-A836-7E6BCD6A3968</string>
+		</dict>
+		<key>EEAB20E9-85A4-412A-B31B-643076FEEC28</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EEAB20E9-85A4-412A-B31B-643076FEEC28.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572394240.14024401</real>
+			<key>timeStoppedRecording</key>
+			<real>572394305.07355297</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>EEAB20E9-85A4-412A-B31B-643076FEEC28</string>
+		</dict>
+		<key>EFADFF5E-BF55-45FB-93DE-A612BA54F157</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EFADFF5E-BF55-45FB-93DE-A612BA54F157.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572395680.06287801</real>
+			<key>timeStoppedRecording</key>
+			<real>572395901.04877901</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>EFADFF5E-BF55-45FB-93DE-A612BA54F157</string>
+		</dict>
+		<key>F0FF5030-FB1B-428D-9EC5-BAD24DB41FCC</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F0FF5030-FB1B-428D-9EC5-BAD24DB41FCC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572461336.65869606</real>
+			<key>timeStoppedRecording</key>
+			<real>572461477.09636402</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>F0FF5030-FB1B-428D-9EC5-BAD24DB41FCC</string>
+		</dict>
+		<key>F1A413D0-6BAB-48E9-98FC-0AB79B9FA727</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F1A413D0-6BAB-48E9-98FC-0AB79B9FA727.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572459567.45778096</real>
+			<key>timeStoppedRecording</key>
+			<real>572459574.15724897</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>F1A413D0-6BAB-48E9-98FC-0AB79B9FA727</string>
+		</dict>
+		<key>F84C33AC-B403-40D7-A988-2695581ECB9E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F84C33AC-B403-40D7-A988-2695581ECB9E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572456504.04969001</real>
+			<key>timeStoppedRecording</key>
+			<real>572456535.34389806</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>F84C33AC-B403-40D7-A988-2695581ECB9E</string>
+		</dict>
+		<key>FBC5B170-3118-49D0-ADFE-A3D43142DC16</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>FBC5B170-3118-49D0-ADFE-A3D43142DC16.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>homework02 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>homework02</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug homework02</string>
+			<key>timeStartedRecording</key>
+			<real>572287594.28650701</real>
+			<key>timeStoppedRecording</key>
+			<real>572289002.78503394</real>
+			<key>title</key>
+			<string>Debug homework02</string>
+			<key>uniqueIdentifier</key>
+			<string>FBC5B170-3118-49D0-ADFE-A3D43142DC16</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
