@@ -19,15 +19,16 @@ class ContactTableCell: UITableViewCell {
         nameLabel.text = contact.name
         emailLabel.text = contact.email
         phoneNumLbl.text = contact.phoneNum
+        phoneTypeLbl.text = contact.phoneType
         
-        if contact.phoneType == 0 {
-            phoneTypeLbl.text = "Cell"
-        }
-       else if contact.phoneType == 1 {
-            phoneTypeLbl.text = "Home"
-        } else {
-            phoneTypeLbl.text = "Office"
-        }
+//        if contact.phoneType == 0 {
+//            phoneTypeLbl.text = "Cell"
+//        }
+//       else if contact.phoneType == 1 {
+//            phoneTypeLbl.text = "Home"
+//        } else {
+//            phoneTypeLbl.text = "Office"
+//        }
     
 
     }

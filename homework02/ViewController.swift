@@ -8,10 +8,11 @@
 
 import UIKit
 import Alamofire
+import Foundation
 
 struct Todo: Codable {
     var id: String
-    var title: String
+    var Name: String
 }
 
 class ViewController: UIViewController {
@@ -30,12 +31,61 @@ class ViewController: UIViewController {
         let cellNib = UINib(nibName: "ContactCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "mycell")
         
-        loadData()
+        self.contactList = loadData1()
+        print(self.contactList)
+        
+        self.contactDic = loadData2()
+        print(self.contactDic)
+        
         
     }
-    
+    private func loadData1() -> [Contact] {
+        // loads data from a String response
+        // returns array of contacts [Contact]
+        var cList = [Contact]()
+        
+        AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contacts").responseString { response in
+            
+            let resp = (response.result.value)
+            let respArray = resp!.components(separatedBy: "\n")
+            
+            for r in respArray {
+                let contactArray = r.components(separatedBy: ",")
+                //print (contactArray, type(of: contactArray))
+                let nContact = Contact(contactArray[1],contactArray[2],contactArray[3],contactArray[4])
+                cList.append(nContact)
+            }
+            
+            //print(respArray, type(of: respArray))
+        }
+        return cList
+    }
+
+    private func loadData2() -> [Int:Contact] {
+        // loads data from a String response
+        // returns Dictionary of contacts [Int:Contact]
+        var cDic = [Int:Contact]()
+        
+        AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contacts").responseString { response in
+            
+            let resp = (response.result.value)
+            let respArray = resp!.components(separatedBy: "\n")
+            
+            for r in respArray {
+                let contactArray = r.components(separatedBy: ",")
+                //print (contactArray, type(of: contactArray))
+                let nContact = Contact(contactArray[1],contactArray[2],contactArray[3],contactArray[4])
+                cDic[Int(contactArray[0]) ?? 0] = nContact
+            }
+            
+            //print(respArray, type(of: respArray))
+        }
+        return cDic
+    }
+
     private func loadData() -> [Contact] {
         
+        // loads data frin a JSON response
         let url = URL(string: "https://my-json-server.typicode.com/typicode/demo/posts")!
         
         AF.request(url).responseJSON { response in
@@ -43,14 +93,12 @@ class ViewController: UIViewController {
             
             let mutableArray = response.result.value as! NSArray
             
-            let count = mutableArray.count
-            
             for item in mutableArray {
                 //let  = item[0]
                 let d =  item as! NSDictionary
                 
                 print("\(String(describing: d.value(forKey: "id")))!)")
-                print("\(String(describing: d.value(forKey: "title")))")
+                print("\(String(describing: d.value(forKey: "name")))")
             }
         }
         return [Contact]()
@@ -59,6 +107,13 @@ class ViewController: UIViewController {
    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         print("viewDidAppear")
+    
+        self.contactList = loadData1()
+        print(self.contactList)
+    
+        self.contactDic = loadData2()
+        print(self.contactDic)
+
         tableView.reloadData()
     }
     
@@ -79,7 +134,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func goBack(unwindSegue: UIStoryboardSegue) {
-        print("unwind segue with identifier \(unwindSegue.identifier) called")
+        //print("unwind segue with identifier \(unwindSegue.identifier) called")
         
         if unwindSegue.identifier == "addContactSegue" {
             contactList.append(newContact)
@@ -116,24 +171,24 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let contact = contactList[indexPath.row]
         self.newContact = contact
         
-        let name = cell.nameLabel as! UILabel
-        let email = cell.emailLabel as! UILabel
-        let phone = cell.phoneLabel as! UILabel
-        let phoneType = cell.typeLabel as! UILabel
+        let name = cell.nameLabel as UILabel
+        let email = cell.emailLabel as UILabel
+        let phone = cell.phoneLabel as UILabel
+        let phoneType = cell.typeLabel as UILabel
         
         name.text = contact.name
         email.text = contact.email
         phone.text = contact.phoneNum
         phoneType.text = String(contact.phoneType!)
        
-        if contact.phoneType == 0 {
-            phoneType.text = "Cell"
-        }
-        else if contact.phoneType == 1 {
-            phoneType.text = "Home"
-        } else {
-            phoneType.text = "Office"
-        }
+//        if contact.phoneType == 0 {
+//            phoneType.text = "Cell"
+//        }
+//        else if contact.phoneType == 1 {
+//            phoneType.text = "Home"
+//        } else {
+//            phoneType.text = "Office"
+//        }
 
         cell.delegate = self
         

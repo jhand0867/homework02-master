@@ -28,14 +28,14 @@ class DetailsViewController: UIViewController {
         self.phoneNum.text = contact!.phoneNum!
         self.phoneType.text = String(contact!.phoneType!)
         
-        if contact!.phoneType == 0 {
-            phoneType.text = "Cell"
-        }
-        else if contact!.phoneType == 1 {
-            phoneType.text = "Home"
-        } else {
-            phoneType.text = "Office"
-        }
+//        if contact!.phoneType == 0 {
+//            phoneType.text = "Cell"
+//        }
+//        else if contact!.phoneType == 1 {
+//            phoneType.text = "Home"
+//        } else {
+//            phoneType.text = "Office"
+//        }
         }
 
         
