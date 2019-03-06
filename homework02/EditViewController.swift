@@ -27,7 +27,7 @@ class EditViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //collecting data typed into UI
-        let contact = Contact(namePassed: nameTextField.text, emailPassed: emailTextField.text, phone: PhoneTextField.text, type: typeSegmentedControl.selectedSegmentIndex)
+        let contact = Contact(nameTextField.text, emailTextField.text, PhoneTextField.text, typeSegmentedControl.selectedSegmentIndex)
         
         //sending back data to ViewController
         let destinationVC = segue.destination as! ViewController

@@ -24,7 +24,7 @@ class Contact {
         
     }
     
-    init(namePassed: String?, emailPassed: String?, phone: String?, type: Int?){
+    init(_ namePassed: String?, _ emailPassed: String?, _ phone: String?, _ type: Int?){
         self.name = namePassed
         self.email = emailPassed
         self.phoneNum = phone

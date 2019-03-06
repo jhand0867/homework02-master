@@ -21,7 +21,7 @@ class NewContactVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //collecting data typed into UI
-        var contact = Contact(namePassed: nameField.text, emailPassed: emailField.text, phone: phoneField.text, type: typeSegmentedControl.selectedSegmentIndex)
+        var contact = Contact(nameField.text, emailField.text, phoneField.text, typeSegmentedControl.selectedSegmentIndex)
         
         //sending back data to ViewController
         let destinationVC = segue.destination as! ViewController

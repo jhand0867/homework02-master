@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import Alamofire
 
+struct Todo: Codable {
+    var id: String
+    var title: String
+}
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var contactList:  [Contact] = []//saves an empty array
+    var contactList =  [Contact] ()//saves an empty array
+    var contactDic =  [Int:Contact] ()//saves an empty array
     var newContact = Contact()//saves contact info from newContactVC
     var selectedRow = 0
+    
     
 
     override func viewDidLoad() {
@@ -22,12 +29,41 @@ class ViewController: UIViewController {
         print( "viewDidLoad" )
         let cellNib = UINib(nibName: "ContactCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "mycell")
+        
+        loadData()
+        
+    }
+    
+    private func loadData() -> [Contact] {
+        
+        let url = URL(string: "https://my-json-server.typicode.com/typicode/demo/posts")!
+        
+        AF.request(url).responseJSON { response in
+            //print(response.value!, type(of: response.value!))
+            
+            let mutableArray = response.result.value as! NSArray
+            
+            let count = mutableArray.count
+            
+            for item in mutableArray {
+                //let  = item[0]
+                let d =  item as! NSDictionary
+                
+                print("\(String(describing: d.value(forKey: "id")))!)")
+                print("\(String(describing: d.value(forKey: "title")))")
+            }
+        }
+        return [Contact]()
     }
     
    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         print("viewDidAppear")
         tableView.reloadData()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
     }
 
   
