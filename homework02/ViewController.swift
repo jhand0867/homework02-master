@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         tableView.register(cellNib, forCellReuseIdentifier: "mycell")
         
         self.contactList = loadData1()
-        print(self.contactList)
+        //print(self.contactList)
         
         //tableView.reloadData()
         
