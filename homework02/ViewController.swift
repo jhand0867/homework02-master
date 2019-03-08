@@ -10,11 +10,6 @@ import UIKit
 import Alamofire
 import Foundation
 
-struct Todo: Codable {
-    var id: String
-    var Name: String
-}
-
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -34,8 +29,10 @@ class ViewController: UIViewController {
         self.contactList = loadData1()
         print(self.contactList)
         
-        self.contactDic = loadData2()
-        print(self.contactDic)
+        //tableView.reloadData()
+        
+        //self.contactDic = loadData2()
+        //print(self.contactDic)
         
         
     }
@@ -45,22 +42,53 @@ class ViewController: UIViewController {
         var cList = [Contact]()
         
         AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contacts").responseString { response in
-            
-            let resp = (response.result.value)
-            let respArray = resp!.components(separatedBy: "\n")
-            
-            for r in respArray {
-                let contactArray = r.components(separatedBy: ",")
-                //print (contactArray, type(of: contactArray))
-                let nContact = Contact(contactArray[1],contactArray[2],contactArray[3],contactArray[4])
-                cList.append(nContact)
-            }
-            
-            //print(respArray, type(of: respArray))
+
+            print(response.result.value!)
+            //if response.result.value != nil {
+                let resp = (response.result.value!)
+                let respArray = resp.components(separatedBy: "\n")
+
+                for r in respArray {
+                    let contactArray = r.components(separatedBy: ",")
+                    //print (contactArray, type(of: contactArray))
+                    let nContact = Contact(contactArray[1],contactArray[2],contactArray[3],contactArray[4])
+                    cList.append(nContact)
+                }
+        
+        self.contactList = cList
+        print (self.contactList)
+        self.tableView.reloadData()
         }
         return cList
     }
 
+    func loadData3() -> [Contact] {
+        
+        var contacts: [Contact] = []
+        
+        let contact1 = Contact("Joe","my@email.com","123456789","0")
+        let contact2 = Contact("MariPau","my@email.com","123456789","0")
+        let contact3 = Contact("Lore","my@email.com","123456789","0")
+        let contact4 = Contact("Matt","my@email.com","123456789","0")
+        let contact5 = Contact("Robert","my@email.com","123456789","0")
+        let contact6 = Contact("Virginia","my@email.com","123456789","0")
+        let contact7 = Contact("Lucho","my@email.com","123456789","0")
+        
+        contacts.append(contact1)
+        contacts.append(contact2)
+        contacts.append(contact3)
+        contacts.append(contact4)
+        contacts.append(contact5)
+        contacts.append(contact6)
+        contacts.append(contact7)
+        
+        
+        
+        return contacts
+    }
+    
+
+    
     private func loadData2() -> [Int:Contact] {
         // loads data from a String response
         // returns Dictionary of contacts [Int:Contact]
@@ -68,8 +96,8 @@ class ViewController: UIViewController {
         
         AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contacts").responseString { response in
             
-            let resp = (response.result.value)
-            let respArray = resp!.components(separatedBy: "\n")
+            let resp = (response.result.value!)
+            let respArray = resp.components(separatedBy: "\n")
             
             for r in respArray {
                 let contactArray = r.components(separatedBy: ",")
@@ -104,18 +132,18 @@ class ViewController: UIViewController {
         return [Contact]()
     }
     
-   override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        print("viewDidAppear")
-    
-        self.contactList = loadData1()
-        print(self.contactList)
-    
-        self.contactDic = loadData2()
-        print(self.contactDic)
-
-        tableView.reloadData()
-    }
+//   override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(true)
+//        print("viewDidAppear")
+//
+//        self.contactList = loadData1()
+//        print(self.contactList)
+//
+////        self.contactDic = loadData2()
+////        print(self.contactDic)
+//
+//        tableView.reloadData()
+//    }
     
     override func viewWillDisappear(_ animated: Bool) {
         
@@ -161,11 +189,13 @@ extension ViewController: ContactCellDelegate{
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contactList.count
+        print(self.contactList.count)
+        return self.contactList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        print("celForAtRow")
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath) as! ContactCell
         
         let contact = contactList[indexPath.row]
