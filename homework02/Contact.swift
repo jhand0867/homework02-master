@@ -10,6 +10,7 @@ import Foundation
 
 class Contact {
     
+    var id: String?
     var name: String?
     var email: String?
     var phoneNum: String?
@@ -17,6 +18,7 @@ class Contact {
     var isDeleted: Bool = false
     
     init() {
+        self.id = ""
         self.name = ""
         self.email = ""
         self.phoneNum = ""
@@ -24,7 +26,8 @@ class Contact {
         
     }
     
-    init(_ namePassed: String?, _ emailPassed: String?, _ phone: String?, _ type: String?){
+    init(_ idPassed: String?, _ namePassed: String?, _ emailPassed: String?, _ phone: String?, _ type: String?){
+        self.id = idPassed
         self.name = namePassed
         self.email = emailPassed
         self.phoneNum = phone

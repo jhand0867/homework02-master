@@ -12,6 +12,7 @@ class EditViewController: UIViewController {
 
     var contact: Contact?
     var data: String?
+    var id: String = ""
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -27,7 +28,7 @@ class EditViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //collecting data typed into UI
-        let contact = Contact(nameTextField.text, emailTextField.text, PhoneTextField.text, String(typeSegmentedControl!.selectedSegmentIndex))
+        let contact = Contact(self.id, nameTextField.text, emailTextField.text, PhoneTextField.text, String(typeSegmentedControl!.selectedSegmentIndex))
         
         //sending back data to ViewController
         let destinationVC = segue.destination as! ViewController

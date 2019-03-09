@@ -33,9 +33,21 @@ class ViewController: UIViewController {
         
         //self.contactDic = loadData2()
         //print(self.contactDic)
-        
-        
     }
+    
+       override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(true)
+            print("viewDidAppear")
+    
+            self.contactList = loadData1()
+            print(self.contactList)
+    
+    //        self.contactDic = loadData2()
+    //        print(self.contactDic)
+    
+            // tableView.reloadData()
+        }
+
     private func loadData1() -> [Contact] {
         // loads data from a String response
         // returns array of contacts [Contact]
@@ -51,7 +63,7 @@ class ViewController: UIViewController {
                 for r in respArray {
                     let contactArray = r.components(separatedBy: ",")
                     //print (contactArray, type(of: contactArray))
-                    let nContact = Contact(contactArray[1],contactArray[2],contactArray[3],contactArray[4])
+                    let nContact = Contact(contactArray[0], contactArray[1],contactArray[2],contactArray[3],contactArray[4])
                     cList.append(nContact)
                 }
         
@@ -66,13 +78,13 @@ class ViewController: UIViewController {
         
         var contacts: [Contact] = []
         
-        let contact1 = Contact("Joe","my@email.com","123456789","0")
-        let contact2 = Contact("MariPau","my@email.com","123456789","0")
-        let contact3 = Contact("Lore","my@email.com","123456789","0")
-        let contact4 = Contact("Matt","my@email.com","123456789","0")
-        let contact5 = Contact("Robert","my@email.com","123456789","0")
-        let contact6 = Contact("Virginia","my@email.com","123456789","0")
-        let contact7 = Contact("Lucho","my@email.com","123456789","0")
+        let contact1 = Contact("", "Joe","my@email.com","123456789","0")
+        let contact2 = Contact("", "MariPau","my@email.com","123456789","0")
+        let contact3 = Contact("", "Lore","my@email.com","123456789","0")
+        let contact4 = Contact("", "Matt","my@email.com","123456789","0")
+        let contact5 = Contact("", "Robert","my@email.com","123456789","0")
+        let contact6 = Contact("", "Virginia","my@email.com","123456789","0")
+        let contact7 = Contact("", "Lucho","my@email.com","123456789","0")
         
         contacts.append(contact1)
         contacts.append(contact2)
@@ -102,7 +114,7 @@ class ViewController: UIViewController {
             for r in respArray {
                 let contactArray = r.components(separatedBy: ",")
                 //print (contactArray, type(of: contactArray))
-                let nContact = Contact(contactArray[1],contactArray[2],contactArray[3],contactArray[4])
+                let nContact = Contact(contactArray[0], contactArray[1],contactArray[2],contactArray[3],contactArray[4])
                 cDic[Int(contactArray[0]) ?? 0] = nContact
             }
             
@@ -132,18 +144,6 @@ class ViewController: UIViewController {
         return [Contact]()
     }
     
-//   override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(true)
-//        print("viewDidAppear")
-//
-//        self.contactList = loadData1()
-//        print(self.contactList)
-//
-////        self.contactDic = loadData2()
-////        print(self.contactDic)
-//
-//        tableView.reloadData()
-//    }
     
     override func viewWillDisappear(_ animated: Bool) {
         
@@ -179,11 +179,27 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: ContactCellDelegate{
+    
+    
     func deleteClicked(cell: UITableViewCell) {
         let indexPath = self.tableView.indexPath(for: cell)
-        self.contactList.remove(at: (indexPath?.row)!)
-         print(" \(indexPath!) deleted")
-        tableView.reloadData()
+        //self.contactList.remove(at: (indexPath?.row)!)
+        
+        
+        let contactId = self.contactList[indexPath!.row].id
+        
+        
+        //let url = URL(String: "http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/delete")!
+
+        var parameters: Parameters = ["id":contactId]
+
+        AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/delete", method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
+            self.contactList.remove(at: (indexPath?.row)!)
+            print(" \(indexPath!) deleted")
+            self.tableView.reloadData()
+        }
+        
+        
     }
 }
 
