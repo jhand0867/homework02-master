@@ -11,6 +11,8 @@ import UIKit
 class DetailsViewController: UIViewController {
     
     var contact: Contact?
+    var selectedRow: Int?
+    
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!

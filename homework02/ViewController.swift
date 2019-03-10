@@ -35,18 +35,13 @@ class ViewController: UIViewController {
         //print(self.contactDic)
     }
     
-       override func viewDidAppear(_ animated: Bool) {
-            super.viewDidAppear(true)
-            print("viewDidAppear")
-    
-            self.contactList = loadData1()
-            print(self.contactList)
-    
-    //        self.contactDic = loadData2()
-    //        print(self.contactDic)
-    
-            // tableView.reloadData()
-        }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        print("viewDidAppear")
+        
+        self.contactList = loadData1()
+        print(self.contactList)
+    }
 
     private func loadData1() -> [Contact] {
         // loads data from a String response
@@ -54,22 +49,25 @@ class ViewController: UIViewController {
         var cList = [Contact]()
         
         AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contacts").responseString { response in
-
             print(response.result.value!)
             //if response.result.value != nil {
-                let resp = (response.result.value!)
-                let respArray = resp.components(separatedBy: "\n")
-
-                for r in respArray {
-                    let contactArray = r.components(separatedBy: ",")
-                    //print (contactArray, type(of: contactArray))
-                    let nContact = Contact(contactArray[0], contactArray[1],contactArray[2],contactArray[3],contactArray[4])
-                    cList.append(nContact)
-                }
-        
-        self.contactList = cList
-        print (self.contactList)
-        self.tableView.reloadData()
+            let resp = (response.result.value!)
+            let respArray = resp.components(separatedBy: "\n")
+            
+            for r in respArray {
+                let contactArray = r.components(separatedBy: ",")
+                //print (contactArray, type(of: contactArray))
+                let nContact = Contact(contactArray[0], contactArray[1],contactArray[2],contactArray[3],contactArray[4])
+                cList.append(nContact)
+            }
+            
+            self.contactList = cList
+            print (self.contactList)
+            let indexPath = IndexPath(row: cList.count - 1, section: 0)
+            
+            self.tableView.reloadData()
+            
+            self.tableView.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.middle  , animated: true)
         }
         return cList
     }
@@ -157,6 +155,8 @@ class ViewController: UIViewController {
             
             let dest = segue.destination as! DetailsViewController
             dest.contact = self.newContact
+            dest.selectedRow = self.tableView.indexPathForSelectedRow?.row
+            contactList.remove(at: selectedRow)
         }
     }
     
@@ -193,15 +193,19 @@ extension ViewController: ContactCellDelegate{
 
         var parameters: Parameters = ["id":contactId]
 
-        AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/delete", method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
+        AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/delete", method:.post  , parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
             self.contactList.remove(at: (indexPath?.row)!)
             print(" \(indexPath!) deleted")
             self.tableView.reloadData()
         }
         
+
         
     }
 }
+
+
+
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

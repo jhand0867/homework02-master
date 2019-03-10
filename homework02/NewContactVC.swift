@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+import Alamofire
 
 class NewContactVC: UIViewController {
     
@@ -22,7 +24,28 @@ class NewContactVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //collecting data typed into UI
-        let contact = Contact(self.id, nameField.text, emailField.text, phoneField.text, String(typeSegmentedControl.selectedSegmentIndex))
+        var type = ""
+        switch typeSegmentedControl.selectedSegmentIndex {
+        case 2:
+            type = "Office"
+        case 1:
+            type = "Home"
+        default:
+            type = "Cell"
+        }
+        
+        let contact = Contact(self.id, nameField.text, emailField.text, phoneField.text, type)
+        
+        //Upadating the server
+        var parameters: Parameters = ["name": contact.name!,
+                                      "email": contact.email!,
+                                      "phone": contact.phoneNum!,
+                                      "type": contact.phoneType!]
+        
+        AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/create", method: .post  , parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
+            
+            print(response.result.value!)
+        }
         
         //sending back data to ViewController
         let destinationVC = segue.destination as! ViewController

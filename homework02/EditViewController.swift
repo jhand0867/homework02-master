@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class EditViewController: UIViewController {
 
@@ -22,17 +23,52 @@ class EditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //nameTextField.text = 
+        nameTextField.text = contact?.name!
+        emailTextField.text = contact?.email!
+        PhoneTextField.text = contact?.phoneNum!
+        switch contact?.phoneType! {
+        case "Office":
+            typeSegmentedControl.selectedSegmentIndex = 2
+        case "Home":
+            typeSegmentedControl.selectedSegmentIndex = 1
+        default:
+            typeSegmentedControl.selectedSegmentIndex = 0
+        }
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        var type = ""
+        switch typeSegmentedControl.selectedSegmentIndex {
+        case 2:
+            type = "Office"
+        case 1:
+            type = "Home"
+        default:
+            type = "Cell"
+        }
+        
         //collecting data typed into UI
-        let contact = Contact(self.id, nameTextField.text, emailTextField.text, PhoneTextField.text, String(typeSegmentedControl!.selectedSegmentIndex))
+        let contact = Contact(self.id, nameTextField.text, emailTextField.text, PhoneTextField.text, type)
         
         //sending back data to ViewController
         let destinationVC = segue.destination as! ViewController
+        //TODO:  update contact
         //destinationVC.contactList.insert(contact, at: )
+        
+        
+        
+        //Upadating the server
+        var parameters: Parameters = ["name": contact.name!,
+                                      "email": contact.email!,
+                                      "phone": contact.phoneNum!,
+                                      "type": contact.phoneType!]
+        
+        AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/update", method: .post  , parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
+            
+            
+        }
         
     }
          
