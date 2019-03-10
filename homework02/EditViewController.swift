@@ -50,7 +50,7 @@ class EditViewController: UIViewController {
         }
         
         //collecting data typed into UI
-        let contact = Contact(self.id, nameTextField.text, emailTextField.text, PhoneTextField.text, type)
+        let contact = Contact(self.contact?.id, nameTextField.text, emailTextField.text, PhoneTextField.text, type)
         
         //sending back data to ViewController
         let destinationVC = segue.destination as! ViewController
@@ -60,14 +60,16 @@ class EditViewController: UIViewController {
         
         
         //Upadating the server
-        var parameters: Parameters = ["name": contact.name!,
+        var parameters: Parameters = ["id": contact.id!,
+                                      "name": contact.name!,
                                       "email": contact.email!,
                                       "phone": contact.phoneNum!,
                                       "type": contact.phoneType!]
         
         AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/update", method: .post  , parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
             
-            
+            print(response.response)
+            self.dismiss(animated: true)
         }
         
     }

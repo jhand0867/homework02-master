@@ -156,7 +156,7 @@ class ViewController: UIViewController {
             let dest = segue.destination as! DetailsViewController
             dest.contact = self.newContact
             dest.selectedRow = self.tableView.indexPathForSelectedRow?.row
-            contactList.remove(at: selectedRow)
+  //          contactList.remove(at: selectedRow)
         }
     }
     
