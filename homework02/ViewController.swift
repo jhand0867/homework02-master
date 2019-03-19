@@ -195,17 +195,26 @@ class ViewController: UIViewController {
     @IBAction func goBack(unwindSegue: UIStoryboardSegue) {
         //print("unwind segue with identifier \(unwindSegue.identifier) called")
         
-        if unwindSegue.identifier == "addContactSegue" {
-            contactList.append(newContact)
+        if unwindSegue.identifier == "goBackToList" {
+            
+            //Upadating the server
+            let parameters: Parameters = ["name": newContact.name!,
+                                          "email": newContact.email!,
+                                          "phone": newContact.phoneNum!,
+                                          "type": newContact.phoneType!]
+            
+            AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/create", method: .post  , parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
+                print("Out \(response.response!.statusCode)")
+                print ("request ")
+                if response.response!.statusCode == 200 {
+                    print("In \(response.response!.statusCode)")
+                    //sending back data to ViewController
+                    msgBox(viewController: self, toShow: "Add Contact", toSay: "Added Successfuly", toTell: "Thanks!")
+                }else{
+                    msgBox(viewController: self, toShow: "Add Contact", toSay: "Added Error", toTell: "Thanks!")
+                    }
+            }
         }
-        
-//        if unwindSegue.identifier == "DetailsSeg" {
-//            print("detailsseg")
-//        }
-//        if unwindSegue.identifier == "EditSeg" {
-//            print("editseg")
-//        }
-        
     }
 }
 
