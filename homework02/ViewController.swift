@@ -18,13 +18,20 @@ class ViewController: UIViewController {
     var newContact = Contact()//saves contact info from newContactVC
     var selectedRow = 0
     
-    
+    @objc func onReceiveNotificaton(notification: Notification) {
+        print("\(notification.object)")
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print( "viewDidLoad" )
         let cellNib = UINib(nibName: "ContactCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "mycell")
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onReceiveNotificaton(notification:)), name: Notification.Name("ContactRemoved"), object: nil)
+        
+        
         
         self.contactList = loadData1()
         //print(self.contactList)
@@ -46,43 +53,52 @@ class ViewController: UIViewController {
     private func loadData1() -> [Contact] {
         // loads data from a String response
         // returns array of contacts [Contact]
+        print("ladData1")
         var cList = [Contact]()
         
         AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contacts").responseString { response in
-            print(response.result.value!)
-            //if response.result.value != nil {
-            let resp = (response.result.value!)
-            let respArray = resp.components(separatedBy: "\n")
-            
-            for r in respArray {
-                let contactArray = r.components(separatedBy: ",")
-                //print (contactArray, type(of: contactArray))
-                let nContact = Contact(contactArray[0], contactArray[1],contactArray[2],contactArray[3],contactArray[4])
-                cList.append(nContact)
+            print(response.result.value ?? 0)
+            if response.response?.statusCode == 200, response.result.value != nil{
+                let resp = (response.result.value!)
+                let respArray = resp.components(separatedBy: "\n")
+                
+                for r in respArray {
+                    let contactArray = r.components(separatedBy: ",")
+                    //print (contactArray, type(of: contactArray))
+                    let nContact = Contact(contactArray[0], contactArray[1],contactArray[2],contactArray[3],contactArray[4])
+                    cList.append(nContact)
+                }
+                
+                self.contactList = cList
+                print (self.contactList)
+                let indexPath = IndexPath(row: cList.count - 1, section: 0)
+                
+                self.tableView.reloadData()
+                
+                self.tableView.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.middle  , animated: true)
+            } else
+            {
+                self.contactList = cList
+                self.tableView.reloadData()
+                msgBox(viewController: self, toShow: "Connection Error", toSay: "Server Unreachable" , toTell: "Try later")
+                
             }
-            
-            self.contactList = cList
-            print (self.contactList)
-            let indexPath = IndexPath(row: cList.count - 1, section: 0)
-            
-            self.tableView.reloadData()
-            
-            self.tableView.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.middle  , animated: true)
         }
         return cList
     }
+
 
     func loadData3() -> [Contact] {
         
         var contacts: [Contact] = []
         
-        let contact1 = Contact("", "Joe","my@email.com","123456789","0")
-        let contact2 = Contact("", "MariPau","my@email.com","123456789","0")
-        let contact3 = Contact("", "Lore","my@email.com","123456789","0")
-        let contact4 = Contact("", "Matt","my@email.com","123456789","0")
-        let contact5 = Contact("", "Robert","my@email.com","123456789","0")
-        let contact6 = Contact("", "Virginia","my@email.com","123456789","0")
-        let contact7 = Contact("", "Lucho","my@email.com","123456789","0")
+        let contact1 = Contact("", "Joe","my@email.com","123456789","Cell")
+        let contact2 = Contact("", "MariPau","my@email.com","123456789","Cell")
+        let contact3 = Contact("", "Lore","my@email.com","123456789","Home")
+        let contact4 = Contact("", "Matt","my@email.com","123456789","Office")
+        let contact5 = Contact("", "Robert","my@email.com","123456789","Home")
+        let contact6 = Contact("", "Virginia","my@email.com","123456789","Cell")
+        let contact7 = Contact("", "Lucho","my@email.com","123456789","Office")
         
         contacts.append(contact1)
         contacts.append(contact2)
@@ -92,7 +108,18 @@ class ViewController: UIViewController {
         contacts.append(contact6)
         contacts.append(contact7)
         
-        
+        for contact in contacts {
+            
+            var parameters: Parameters = ["name": contact.name!,
+                                          "email": contact.email!,
+                                          "phone": contact.phoneNum!,
+                                          "type": contact.phoneType!]
+            
+            AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/create", method: .post  , parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
+                
+                print(response.result.value!)
+            }
+        }
         
         return contacts
     }
@@ -146,6 +173,10 @@ class ViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 
   
   
@@ -168,12 +199,12 @@ class ViewController: UIViewController {
             contactList.append(newContact)
         }
         
-        if unwindSegue.identifier == "DetailsSeg" {
-            print("detailsseg")
-        }
-        if unwindSegue.identifier == "EditSeg" {
-            print("editseg")
-        }
+//        if unwindSegue.identifier == "DetailsSeg" {
+//            print("detailsseg")
+//        }
+//        if unwindSegue.identifier == "EditSeg" {
+//            print("editseg")
+//        }
         
     }
 }
@@ -191,12 +222,23 @@ extension ViewController: ContactCellDelegate{
         
         //let url = URL(String: "http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/delete")!
 
-        var parameters: Parameters = ["id":contactId]
-
-        AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/delete", method:.post  , parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
-            self.contactList.remove(at: (indexPath?.row)!)
-            print(" \(indexPath!) deleted")
-            self.tableView.reloadData()
+        var parameters: Parameters = ["id":contactId!]
+                    
+        AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/delete",
+                   method:.post,
+                   parameters: parameters,
+                   encoding: URLEncoding.default,
+                   headers: nil,
+                   interceptor: nil)
+            .responseString { (response) in
+                if response.response?.statusCode == 200 {
+                    NotificationCenter.default.post(name: NSNotification.Name("ContactRemoved"), object: nil)
+                    self.contactList.remove(at: (indexPath?.row)!)
+                    //print(" \(indexPath!) deleted")
+                    self.tableView.reloadData()
+                } else {
+                    print ("Error ... \(response.error.debugDescription)" )
+                }
         }
         
 
@@ -209,12 +251,12 @@ extension ViewController: ContactCellDelegate{
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(self.contactList.count)
+        //print(self.contactList.count)
         return self.contactList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("celForAtRow")
+        //print("celForAtRow")
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath) as! ContactCell
         
@@ -230,15 +272,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         email.text = contact.email
         phone.text = contact.phoneNum
         phoneType.text = String(contact.phoneType!)
-       
-//        if contact.phoneType == 0 {
-//            phoneType.text = "Cell"
-//        }
-//        else if contact.phoneType == 1 {
-//            phoneType.text = "Home"
-//        } else {
-//            phoneType.text = "Office"
-//        }
 
         cell.delegate = self
         

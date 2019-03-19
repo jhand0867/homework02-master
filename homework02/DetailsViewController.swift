@@ -48,18 +48,24 @@ class DetailsViewController: UIViewController {
         
         let contactId = contact?.id
         let parameters: Parameters = ["id":contactId!]
-
+        
         AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/delete", method:.post  , parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
-                   self.dismiss(animated: true)
+            
+            if response.response?.statusCode == 200 {
+                // I'm connected
+                NotificationCenter.default.post(name: NSNotification.Name("ContactRemoved"), object: self.contact)
+                
+            }
+            self.dismiss(animated: true)
         }
-
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            
-        let dest = segue.destination as! EditViewController
-        dest.contact = self.contact
         
+        if segue.identifier == "EditSeg" {
+          let dest = segue.destination as! EditViewController
+          dest.contact = self.contact
+        }
     }
 
     

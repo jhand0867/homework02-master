@@ -22,7 +22,38 @@ class NewContactVC: UIViewController {
     var id: String = ""
     
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        print ("shouldPerformSegue")
+        
+        let toShow = "Invalid Contact"
+        var toSay = ""
+        let toTell = "Plese correct"
+        if nameField!.text! != "" &&
+            emailField!.text! != "" &&
+            phoneField!.text! != "" {
+            return true
+        } else {
+            
+            if nameField!.text! == "" {
+                toSay = toSay + "Name "
+            }
+            if emailField!.text! == "" {
+                toSay = toSay + " Email "
+            }
+            if phoneField!.text! == "" {
+                toSay = toSay + " Phone "
+            }
+            toSay = toSay + " is/are Invalid "
+            
+            msgBox(viewController: self, toShow: toShow, toSay: toSay, toTell: toTell)
+            return false
+        }
+
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       print ("prepare for")
         //collecting data typed into UI
         var type = ""
         switch typeSegmentedControl.selectedSegmentIndex {
@@ -43,22 +74,26 @@ class NewContactVC: UIViewController {
                                       "type": contact.phoneType!]
         
         AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/create", method: .post  , parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
-            
-            print(response.result.value!)
+            print("Out \(response.response?.statusCode)")
+            print ("request ")
+            if response.response?.statusCode == 200 {
+                print("In \(response.response?.statusCode)")
+                //sending back data to ViewController
+                let destinationVC = segue.destination as! ViewController
+                destinationVC.contactList.append(contact)
+                
+                msgBox(viewController: self, toShow: "Add Contact", toSay: "Added Successfuly", toTell: "Thanks!")
+                
+                //passing data to detailsVC
+//                if segue.identifier == "SegDetails" {
+//                    let destinationVC = segue.destination as! DetailsViewController
+//                    destinationVC.contact = self.contact
+//                }
+                
+
+            } 
         }
-        
-        //sending back data to ViewController
-        let destinationVC = segue.destination as! ViewController
-        destinationVC.contactList.append(contact)
-        
-        //passing data to detailsVC
-        if segue.identifier == "SegDetails" {
-            let destinationVC = segue.destination as! DetailsViewController
-            destinationVC.contact = self.contact
-            
-            
-        }
-        
+     
     }
    
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

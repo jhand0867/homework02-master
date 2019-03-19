@@ -69,14 +69,44 @@ class EditViewController: UIViewController {
         AF.request("http://ec2-18-234-222-229.compute-1.amazonaws.com/contact/update", method: .post  , parameters: parameters, encoding: URLEncoding.default, headers: nil, interceptor: nil).responseString { (response) in
             
             print(response.response)
-            self.dismiss(animated: true)
+            if response.response?.statusCode == 200 {
+                self.dismiss(animated: true)
+            } else{
+                msgBox(viewController: self, toShow: "Error ", toSay: "Error on Server", toTell: String(response.response!.statusCode))
+                }
         }
         
     }
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let toShow = "Invalid Contact"
+        var toSay = ""
+        let toTell = "Plese correct"
+        if nameTextField!.text! != "" &&
+            emailTextField!.text! != "" &&
+            PhoneTextField!.text! != "" {
+            return true
+        } else {
+            
+            if nameTextField!.text! == "" {
+                toSay = toSay + "Name "
+            }
+            if emailTextField!.text! == "" {
+                toSay = toSay + " Email "
+            }
+            if PhoneTextField!.text! == "" {
+                toSay = toSay + " Phone "
+            }
+            toSay = toSay + " is/are Invalid "
+            
+            msgBox(viewController: self, toShow: toShow, toSay: toSay, toTell: toTell)
+            return false
+        }
+
+    }
          
     @IBAction func submitClicked(_ sender: Any) {
-        print("submitClicked")
-        self.dismiss(animated: true)
+        // self.dismiss(animated: true)
+        
     }
     
 
